@@ -1,15 +1,15 @@
 // app/content/siteConfig.ts
 
 export const ngo = {
-    name: "Udaan Foundation",
-    shortName: "Udaan",
-    tagline: "Every child. Every village. A future.",
+    name: "Jan Vikas",
+    shortName: "Jan Vikas",
+    tagline: "Towards a just, self-reliant society.",
     description:
-      "Udaan Foundation works with vulnerable communities across India to ensure access to education, healthcare, and dignified livelihoods.",
+      "Jan Vikas is a grassroots organization based in Bettiah, West Champaran (Bihar), working for over three decades with children, women, farmers, leprosy-affected families and marginalized communities to build a justice-based, equitable society.",
     contact: {
-      email: "contact@udaanfoundation.org",
-      phone: "+91 8800 000 000",
-      addressLine1: "New Delhi, India",
+      email: "janvikasbth@yahoo.com",
+      phone: "+91 98011 58564 / +91 88040 86626",
+      addressLine1: "Imli Chowk, Baswaria, P.O. Bettiah, Dist. West Champaran, Bihar, India - 845438",
     },
   };
   
@@ -27,8 +27,8 @@ export const ngo = {
   ];
   
   export const socialLinks = [
-    { label: "Facebook", href: "https://facebook.com" },
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "YouTube", href: "https://youtube.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
+  { label: "Facebook", href: "#" },
+  { label: "Instagram", href: "#" },
+  { label: "YouTube", href: "#" },
+  { label: "LinkedIn", href: "#" },
   ];

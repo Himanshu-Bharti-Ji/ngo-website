@@ -4,36 +4,37 @@
 export const aboutContent = {
   hero: {
     image:
-      "https://images.pexels.com/photos/6646907/pexels-photo-6646907.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
-    title: "About Us",
-    subtitle: "Dedicated to creating positive change and transforming lives across India",
+      "https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    title: "About Jan Vikas",
+    subtitle:
+      "A grassroots organisation from Bettiah, West Champaran, building a justice-based and self-reliant society since 1991.",
   },
   mission: {
     title: "Our Mission",
-    text: "To improve the lives of underprivileged communities across India through education, healthcare, and sustainable development programs.",
+    text: "To fight inequality, casteism, superstition, unemployment, poverty and illiteracy, and to uphold the rights and dignity of the most marginalized communities.",
   },
   vision: {
     title: "Our Vision",
-    text: "A society where every person has equal access to quality education, healthcare, and opportunities to lead a dignified life.",
+    text: "A self-reliant and liberated community where every person – irrespective of caste, gender or economic status – can live with justice, equality and human values.",
   },
   values: {
-    title: "Our Values",
-    text: "Compassion, integrity, transparency, and accountability guide all our work.",
+    title: "Our Core Identity",
+    text: "Justice, equality, dignity, participation of the poor and marginalized, secular and inclusive approach, and deep commitment to grassroots social change.",
   },
   story: {
     title: "Our Story",
     paragraphs: [
-      "Founded in 1999, we began with a simple vision: to make quality education and healthcare accessible to all. What started as a small initiative with a handful of volunteers has grown into a movement touching the lives of thousands across India.",
-      "Over two decades, we have successfully implemented multiple programs in education, health, and community development. Our work has reached rural and urban areas, impacting villages and cities alike.",
-      "Today, we stand as a beacon of hope, supported by dedicated staff, volunteers, and donors who believe in the power of collective action to create sustainable change.",
+      "Jan Vikas was established in 1991 at Bettiah (West Champaran, Bihar) by a group of awakened social activists who believed that lasting change begins with organised communities. From the beginning, the organisation has been committed to challenging deep‑rooted social evils and creating a society based on equality and moral values.",
+      "Over more than 35 years of work, Jan Vikas has walked alongside children, youth, women, farmers, Dalit and minority communities and leprosy‑affected families. The organisation has focused on issues such as child protection, education of Dalit and minority girls, control of female foeticide, promotion of self‑help groups, sustainable agriculture and the rights of leprosy‑affected families.",
+      "Today, Jan Vikas works primarily in the districts of West Champaran, East Champaran and Sitamarhi in Bihar, and in the Nepal‑bordering areas of Eastern Uttar Pradesh. With a small but committed team and strong community institutions, Jan Vikas continues to build a justice‑based, people‑centred development process.",
     ],
   },
   achievements: [
-    "Educated over 10,000 children through our scholarship programs",
-    "Provided healthcare to 50,000+ people in remote areas",
-    "Trained 2,000+ individuals in skill development programs",
-    "Established 15+ learning centers in underserved communities",
-    "Recognized and awarded for outstanding social impact",
+    "More than three decades of continuous work with children, women, farmers, Dalit and minority communities and leprosy‑affected families.",
+    "Implementation of key child protection interventions such as CHILDLINE 1098 and Railway CHILDLINE at Narkatiyaganj Railway Station.",
+    "Innovative work on control of female foeticide through the Kopal Project under the PNDT Act.",
+    "Formation and strengthening of Self Help Groups (SHGs) with women, focusing on empowerment and skill development.",
+    "Promotion of sustainable and low‑cost agriculture in Nepal‑bordering districts of Eastern Uttar Pradesh and Northern Bihar.",
   ],
 };
 
@@ -42,93 +43,94 @@ export const whatWeDoContent = {
     image:
       "https://images.pexels.com/photos/7100371/pexels-photo-7100371.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
     title: "What We Do",
-    subtitle: "Our comprehensive programs addressing critical social issues",
+    subtitle:
+      "Programmes rooted in child protection, women’s empowerment, sustainable agriculture and rights-based development.",
   },
   programs: [
     {
       key: "education",
-      title: "Education Programs",
+      title: "Education & Child Protection",
       description:
-        "Providing quality education and scholarships to underprivileged children. We run learning centers, mobile schools, and offer educational support to ensure no child is left behind.",
+        "Bridge course residential camps, learning centres and CHILDLINE interventions that protect children from abuse, child labour, trafficking and early marriage, while ensuring access to joyful education.",
       imageUrl:
         "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
     },
     {
       key: "healthcare",
-      title: "Healthcare Initiatives",
+      title: "Health, Gender & Leprosy Support",
       description:
-        "Delivering healthcare services to rural and remote areas. Our programs include health camps, awareness drives, and maternal and child health initiatives.",
+        "Promotion of educational and health status of women and children, control of female foeticide (Kopal Project under the PNDT Act), and long‑term educational and social welfare support for leprosy‑affected families.",
       imageUrl:
         "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
     },
     {
       key: "community",
-      title: "Community Development",
+      title: "Governance, Rights & Community Institutions",
       description:
-        "Implementing sustainable projects for community upliftment including livelihood, skill development, and infrastructure improvement.",
+        "Strengthening Panchayati Raj institutions, Mahila Mandals, youth and community‑based organisations to claim rights, participate in local governance and safeguard children in distress.",
       imageUrl:
         "https://images.pexels.com/photos/8844781/pexels-photo-8844781.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
     },
     {
       key: "skills",
-      title: "Skill Development",
+      title: "SHGs & Livelihood Skills",
       description:
-        "Training programs in various trades to enhance employment opportunities. We provide vocational training and job placement assistance.",
+        "Formation and nurturing of women’s Self Help Groups (SHGs), leadership development, and skill‑building for sustainable livelihoods and financial inclusion.",
       imageUrl:
         "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
     },
     {
       key: "family",
-      title: "Family Support",
+      title: "Support for Leprosy‑Affected Families",
       description:
-        "Programs focused on family welfare, women empowerment, and children protection. We address social issues affecting families.",
+        "Educational, social welfare and psycho‑social support for families affected by leprosy, addressing stigma, exclusion and long‑term rehabilitation.",
       imageUrl:
         "https://images.pexels.com/photos/7100371/pexels-photo-7100371.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
     },
     {
       key: "environment",
-      title: "Environmental",
+      title: "Sustainable Agriculture & Environment",
       description:
-        "Environmental awareness and sustainability projects. We promote eco-friendly practices and environmental conservation.",
+        "Revival of agriculture‑based livelihoods through scientific, area‑specific Packages of Practices (PoPs), organic manuring, composting, biogas and fruit tree plantation along bunds.",
       imageUrl:
         "https://images.pexels.com/photos/7750326/pexels-photo-7750326.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
     },
   ],
   programDetails: [
     {
-      title: "Education & Scholarship",
+      title: "Education & Child Protection",
       intro:
-        "We believe education is the foundation for a better future. Our education programs serve thousands of children annually:",
+        "Education is central to breaking cycles of child marriage, child labour and exclusion. Jan Vikas focuses on Dalit and minority girls, children in distress and children from leprosy‑affected families:",
       items: [
-        "Full scholarships for deserving students from Class 1-12",
-        "After-school tutoring and study support",
-        "Digital literacy training",
-        "Sports and extracurricular activities",
-        "Educational infrastructure support",
+        "Bridge Course Residential Camps and learning centres for school dropouts and out‑of‑school children.",
+        "Child protection services through CHILDLINE 1098 and Railway CHILDLINE at Narkatiyaganj Railway Station.",
+        "Joyful, activity‑based teaching and teacher training support.",
+        "Education centres and special support for children from leprosy‑affected families.",
+        "Community awareness on the importance of girls’ education.",
       ],
     },
     {
-      title: "Healthcare Services",
+      title: "Health, Gender & Leprosy Support",
       intro:
-        "Healthcare is a fundamental right. We work to ensure access to quality medical services:",
+        "Health and gender justice are closely linked. Our work focuses on women, children and families facing stigma and neglect:",
       items: [
-        "Free health check-up camps in villages",
-        "Prenatal and postnatal care for mothers",
-        "Immunization and disease prevention programs",
-        "Health awareness workshops",
-        "Emergency medical assistance",
+        "Kopal Project – control of female foeticide under the PNDT Act through community monitoring and awareness.",
+        "Promotion of women’s and children’s health through camps, counselling and linkages to public health services.",
+        "Holistic educational and social welfare support for leprosy‑affected families.",
+        "Reducing stigma and discrimination through door‑to‑door contact and community dialogue.",
+        "Linkages with government schemes for health and social security.",
       ],
     },
     {
-      title: "Livelihood & Skill Development",
+      title: "Livelihoods, SHGs & Sustainable Agriculture",
       intro:
-        "Economic empowerment through skills and employment support:",
+        "Economic and ecological security go hand in hand in Jan Vikas’ work with farmers, women and landless families:",
       items: [
-        "Vocational training in various trades",
-        "Microfinance and startup support",
-        "Job placement assistance",
-        "Entrepreneurship development programs",
-        "Women's economic empowerment initiatives",
+        "Formation and strengthening of women’s Self Help Groups (SHGs) and Mahila Mandals.",
+        "Skill‑building and small enterprise promotion for women and youth.",
+        "Revival of agriculture‑based livelihoods in Nepal‑bordering districts of Eastern Uttar Pradesh and Northern Bihar.",
+        "Promotion of low‑cost, scientific and area‑specific agricultural Packages of Practices (PoPs).",
+        "Organic manuring, composting, biogas promotion and fruit tree plantation for soil health and environmental conservation.",
       ],
     },
   ],
@@ -139,60 +141,60 @@ export const impactContent = {
     image:
       "https://images.pexels.com/photos/8472016/pexels-photo-8472016.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
     title: "Our Impact",
-    subtitle: "Transforming lives and building stronger communities",
+    subtitle: "Stories of change from West Champaran, East Champaran, Sitamarhi and neighbouring regions",
   },
   stats: [
-    { number: "50,000+", label: "Lives Impacted" },
-    { number: "10,000+", label: "Children Educated" },
-    { number: "2,000+", label: "Skills Trained" },
-    { number: "25+", label: "Years Active" },
+    { number: "35+", label: "Years of grassroots work" },
+    { number: "3", label: "Core districts in Bihar" },
+    { number: "0.35", label: "Acres of community campus" },
+    { number: "Many", label: "Community institutions nurtured" },
   ],
   stories: [
     {
-      title: "From Struggle to Success",
+      title: "From dropout to confident learner",
       icon: "award",
-      text: "Priya, a 12-year-old girl from a rural village, dreamed of becoming a teacher but had no access to quality education. Through our scholarship program, she received full support for her schooling. Today, she is pursuing her teacher training and has become an inspiration in her village.",
+      text: "A Dalit girl from a remote village in West Champaran had dropped out of school and was at risk of early marriage. Through Jan Vikas’ Bridge Course Residential Camp, she re‑entered education in a child‑friendly environment. Today she is back in mainstream school and inspires other girls in her hamlet to continue their education.",
     },
     {
-      title: "Healthcare Changes Lives",
+      title: "Child in distress finds safety",
       icon: "heart",
-      text: "Ramesh suffered from untreated diabetes in a remote area. Our health camp identified his condition and provided ongoing medical support and awareness. With proper care, he is now healthy and actively involved in community health initiatives.",
+      text: "A runaway child reached Narkatiyaganj Railway Station frightened and alone. Railway CHILDLINE, run by Jan Vikas, intervened with care and protection, coordinated with stakeholders and safely reunited the child with his family, preventing trafficking and further harm.",
     },
     {
-      title: "Economic Empowerment",
+      title: "Women’s groups gain voice and income",
       icon: "trending",
-      text: "Meera, a widow with two children, learned tailoring through our skill development program. She now runs a small business earning enough to support her family and employs other women from her village.",
+      text: "Women from a leprosy‑affected colony, earlier excluded from village decisions, formed Self Help Groups with support from Jan Vikas. They began savings, accessed small loans, and started income‑generating activities. Over time, their confidence grew and their voices are now heard in Gram Sabha and Panchayat spaces.",
     },
     {
-      title: "Community Transformation",
+      title: "Low‑cost farming, better livelihoods",
       icon: "users",
-      text: "An entire village was transformed through our comprehensive development program. Improved infrastructure, education centers, and health awareness resulted in a 40% increase in school enrollment and significant health improvements.",
+      text: "Small and marginal farmers in Nepal‑bordering blocks of Eastern Uttar Pradesh and Northern Bihar were struggling with high input costs. Through Jan Vikas’ agriculture‑based livelihood revival project, they adopted scientific, area‑specific PoPs, organic manures and composting. Their costs reduced, soil health improved and farm incomes became more stable.",
     },
   ],
   byNumbers: {
     education: [
-      "10,000+ children sponsored for education",
-      "15 learning centers established",
-      "98% scholarship beneficiary success rate",
-      "500+ teachers trained",
+      "Bridge Course Residential Camps and learning centres for school‑dropout and out‑of‑school children.",
+      "Special learning support for Dalit and minority girls to prevent child marriage and child labour.",
+      "Education centres for children from leprosy‑affected families.",
+      "Teacher support for joyful, activity‑based learning.",
     ],
     healthcare: [
-      "50,000+ people received healthcare",
-      "100+ health camps organized",
-      "5,000+ maternal health beneficiaries",
-      "20,000+ immunization coverage",
+      "Promotion of women’s and children’s health through health awareness and linkages to public services.",
+      "Kopal Project interventions addressing female foeticide under the PNDT Act.",
+      "Support and accompaniment to leprosy‑affected families in accessing treatment and entitlements.",
+      "Community awareness on nutrition, hygiene and preventive health.",
     ],
     livelihood: [
-      "2,000+ people skill trained",
-      "70% job placement rate",
-      "300+ micro-enterprises supported",
-      "1,000+ women economically empowered",
+      "Formation and strengthening of women’s SHGs and Mahila Mandals.",
+      "Skill development and small enterprise promotion with women and youth.",
+      "Revival of agriculture‑based livelihoods in Nepal‑bordering districts of Eastern Uttar Pradesh and Northern Bihar.",
+      "Support for alternative livelihoods for leprosy‑affected and landless families.",
     ],
     community: [
-      "50+ villages directly impacted",
-      "100+ community projects completed",
-      "1,000+ volunteers mobilized",
-      "Environmental conservation in 20+ villages",
+      "Work focused in the districts of West Champaran, East Champaran and Sitamarhi (Bihar).",
+      "Community‑based institutions such as SHGs, youth groups and issue‑based forums promoted.",
+      "Training and accompaniment on Panchayati Raj, local governance and rights.",
+      "Environmental conservation through tree plantation, composting and promotion of organic practices.",
     ],
   },
 };
@@ -202,38 +204,38 @@ export const teamContent = {
     image:
       "https://images.pexels.com/photos/6646962/pexels-photo-6646962.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
     title: "Our Team",
-    subtitle: "Dedicated professionals working towards social change",
+    subtitle: "Led by experienced social activists with deep roots in the field",
   },
   members: [
     {
-      name: "Dr. Rajesh Kumar",
-      position: "Founder & Executive Director",
-      bio: "With 25+ years of experience in social development, Dr. Rajesh founded this NGO with a vision to transform communities.",
+      name: "Mr. Abdul Majeed",
+      position: "President, Jan Vikas",
+      bio: "Mr. A. Majeed is a qualified and widely respected social worker with around 34 years of experience in education, economic planning, social organisation, integrated development and livelihood promotion. He has served as Programme Officer, Coordinator, Resource Person and Consultant with organisations such as IGSSS, NEG, D.K. Austria, Development Alternatives, PACS and SDTT. He leads Jan Vikas with a strong commitment to team work and result‑oriented grassroots action.",
     },
     {
-      name: "Ms. Priya Sharma",
-      position: "Education Director",
-      bio: "Educational reformer with a passion for making quality education accessible to all. Oversees all education initiatives.",
+      name: "Programme Coordination Team",
+      position: "Child Protection & Education",
+      bio: "A dedicated team of social workers and community organisers who run CHILDLINE 1098, Railway CHILDLINE, Bridge Course Residential Camps and learning centres for Dalit, minority and leprosy‑affected children.",
     },
     {
-      name: "Dr. Arun Singh",
-      position: "Healthcare Head",
-      bio: "Medical doctor dedicated to rural healthcare. Leads healthcare programs across 20+ villages.",
+      name: "Women’s Collectives & SHG Team",
+      position: "Women’s Empowerment & SHGs",
+      bio: "Field animators and community leaders who facilitate Mahila Mandals and Self Help Groups, build leadership among women and strengthen their access to livelihoods and rights.",
     },
     {
-      name: "Ms. Anjali Patel",
-      position: "Community Development Manager",
-      bio: "Social worker with expertise in community engagement and sustainable development projects.",
+      name: "Agriculture & Livelihood Team",
+      position: "Sustainable Agriculture & Livelihoods",
+      bio: "Staff and community resource persons who support farmers in adopting low‑cost, scientific agricultural practices, organic manuring and livelihood diversification.",
     },
     {
-      name: "Mr. Vikram Verma",
-      position: "Finance & Administration",
-      bio: "Ensures financial transparency and efficient management of resources for maximum impact.",
+      name: "Community Organisers",
+      position: "Governance & Rights",
+      bio: "Grassroots leaders who accompany Panchayats, youth groups and community‑based institutions to participate in local governance and claim their rights.",
     },
     {
-      name: "Ms. Divya Iyer",
-      position: "Programs Coordinator",
-      bio: "Coordinates all field programs and ensures quality implementation across all initiatives.",
+      name: "Support & Administration",
+      position: "Finance, Administration & Documentation",
+      bio: "Back‑end staff ensuring transparent use of resources, documentation, reporting and coordination with partners and networks.",
     },
   ],
   culture: [
@@ -472,17 +474,17 @@ export const contactContent = {
   hero: {
     image:
       "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
-    title: "Contact Us",
-    subtitle: "Get in touch with us",
+    title: "Contact Jan Vikas",
+    subtitle: "Reach our team in Bettiah, West Champaran",
   },
   address: {
-    line1: "123 Community Center",
-    city: "New Delhi, India - 110001",
+    line1: "Imli Chowk, Baswaria, P.O. Bettiah",
+    city: "Dist. West Champaran, Bihar, India - 845438",
   },
   officeHours: {
-    weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
-    saturday: "Saturday: 10:00 AM - 2:00 PM",
-    sunday: "Sunday: Closed",
+    weekdays: "Monday - Saturday: 10:00 AM - 5:00 PM",
+    saturday: "Saturday: 10:00 AM - 5:00 PM",
+    sunday: "Sunday & public holidays: Closed",
   },
   formSubjects: ["Donation Inquiry", "Volunteer", "Program Information", "General Inquiry", "Other"],
 };

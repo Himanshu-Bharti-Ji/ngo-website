@@ -56,7 +56,7 @@ export default function Navigation() {
 
           {/* Mobile: brand name */}
           <span className="lg:hidden text-sm font-bold text-[#0d2b1a]" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Udaan Foundation
+            Jan Vikas
           </span>
           <div className="lg:hidden w-8" />
         </div>

@@ -4,71 +4,71 @@ export const heroSlides = [
   {
     id: 1,
     image: "https://images.pexels.com/photos/6646907/pexels-photo-6646907.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
-    eyebrow: "Education for every child",
-    title: "Give every child\na fair chance.",
-    subtitle: "Community learning centers, scholarships, and after-school programs reaching the most underserved corners of India.",
-    primaryCta: { label: "Support education", href: "/get-involved" },
-    secondaryCta: { label: "See our impact", href: "/impact" },
-    badge: "10,000+ children educated",
+    eyebrow: "Children first",
+    title: "Protect every child.\nKeep every girl in school.",
+    subtitle: "Bridge Course Residential Camps, learning centres, CHILDLINE 1098 and Railway CHILDLINE protecting children in and around West Champaran.",
+    primaryCta: { label: "Support our child work", href: "/get-involved" },
+    secondaryCta: { label: "Know what we do", href: "/what-we-do" },
+    badge: "Since 1991 in West Champaran",
   },
   {
     id: 2,
     image: "https://images.pexels.com/photos/6818005/pexels-photo-6818005.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
-    eyebrow: "Healthcare that reaches everyone",
-    title: "No family\nleft behind.",
-    subtitle: "Mobile health camps and awareness drives bring essential care to remote villages that doctors never reach.",
-    primaryCta: { label: "Fund a health camp", href: "/get-involved" },
-    secondaryCta: { label: "View health stories", href: "/media" },
-    badge: "50,000+ people treated",
+    eyebrow: "Women, health & dignity",
+    title: "When women are\nhealthy and informed.",
+    subtitle: "Kopal Project on female foeticide, health promotion and support to leprosy‑affected families so women and children can live with dignity.",
+    primaryCta: { label: "Stand with women", href: "/get-involved" },
+    secondaryCta: { label: "See our impact", href: "/impact" },
+    badge: "Working with women’s groups",
   },
   {
     id: 3,
     image: "https://images.pexels.com/photos/8468470/pexels-photo-8468470.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
-    eyebrow: "Women & livelihoods",
-    title: "When women rise,\nvillages rise.",
-    subtitle: "Self-help groups and skills training programs help women lead change — for themselves and entire communities.",
-    primaryCta: { label: "Empower women", href: "/get-involved" },
-    secondaryCta: { label: "Our community work", href: "/what-we-do" },
-    badge: "3,000+ women trained",
+    eyebrow: "Farmers & the land",
+    title: "Reviving agriculture‑based\nlivelihoods on the border.",
+    subtitle: "Supporting small farmers in Nepal‑bordering districts of Eastern Uttar Pradesh and Northern Bihar with sustainable, low‑cost agriculture and SHG‑based livelihoods.",
+    primaryCta: { label: "Support livelihoods", href: "/get-involved" },
+    secondaryCta: { label: "Explore programmes", href: "/what-we-do" },
+    badge: "Sustainable agriculture & SHGs",
   },
 ];
 
 export const missionStrip = {
-  title: "We stand with the most vulnerable communities.",
+  title: "We stand with children, women, farmers and leprosy‑affected families.",
   description:
-    "From remote villages to urban slums, Udaan Foundation partners with local leaders to create lasting change.",
-  tags: ["Child education", "Primary healthcare", "Women & livelihoods"],
+    "From Bettiah in West Champaran to neighbouring districts of Bihar and Eastern Uttar Pradesh, Jan Vikas works with the most marginalised communities for justice‑based development.",
+  tags: ["Child protection & education", "Women’s health & rights", "Sustainable agriculture & SHGs"],
 };
 
 export const impactStats = [
-  { number: "50,000+", label: "Lives impacted", icon: "heart" },
-  { number: "500+", label: "Programs delivered", icon: "star" },
-  { number: "120+", label: "Partner communities", icon: "map" },
-  { number: "25+", label: "Years of service", icon: "calendar" },
+  { number: "1991", label: "Year Jan Vikas was founded", icon: "calendar" },
+  { number: "35+", label: "Years of grassroots experience", icon: "star" },
+  { number: "3", label: "Core districts in Bihar", icon: "map" },
+  { number: "0.35", label: "Acres of community campus land", icon: "heart" },
 ];
 
 export const services = [
   {
     key: "education",
-    title: "Education",
+    title: "Education & Child Protection",
     description:
-      "Learning centers, after-school support, and scholarships to keep children in school and help them thrive.",
+      "Bridge Course Residential Camps, learning centres and CHILDLINE services that protect children from abuse, trafficking and child marriage while enabling learning.",
     imageUrl:
       "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop",
   },
   {
     key: "healthcare",
-    title: "Healthcare",
+    title: "Women’s Health & Leprosy Support",
     description:
-      "Mobile health camps, nutrition support, and awareness sessions that reach families where they are.",
+      "Promotion of women’s and children’s health, control of female foeticide through the Kopal Project, and long‑term support to leprosy‑affected families.",
     imageUrl:
       "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop",
   },
   {
     key: "community",
-    title: "Community Development",
+    title: "Sustainable Agriculture & SHGs",
     description:
-      "Women's self-help groups, livelihood training, and local leadership for long-term sustainable change.",
+      "Women’s Self Help Groups, Mahila Mandals and small farmers adopting sustainable, low‑cost agriculture and strengthening local governance.",
     imageUrl:
       "https://images.pexels.com/photos/8844781/pexels-photo-8844781.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop",
   },
@@ -76,9 +76,9 @@ export const services = [
 
 // ── NEW: Featured story (large pull quote) ──
 export const featuredStory = {
-  quote: "I never thought a girl from our village could become a teacher. Udaan made me believe it was possible.",
-  name: "Priya Kumari",
-  detail: "Scholarship recipient, 2019 — now a primary school teacher in Rajasthan",
+  quote: "We started with a handful of committed people in Bettiah. Today, communities themselves lead the struggle for justice and dignity.",
+  name: "Team Jan Vikas",
+  detail: "Grassroots organisation based in West Champaran, Bihar",
   image: "https://images.pexels.com/photos/6646907/pexels-photo-6646907.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
 };
 
@@ -245,7 +245,7 @@ export const photoStrip = [
 // ── NEW: Testimonial from donor/volunteer ──
 export const testimonials = [
   {
-    text: "Visiting an Udaan learning center changed my perspective on what grassroots education can look like. These children are hungry to learn — they just need the tools.",
+    text: "Visiting a Jan Vikas learning centre in Bettiah changed my perspective on what grassroots education can look like. These children are hungry to learn — they just need the tools.",
     name: "Arjun Mehta",
     role: "Corporate donor, Bangalore",
     image: "https://images.pexels.com/photos/6646962/pexels-photo-6646962.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
@@ -257,7 +257,7 @@ export const testimonials = [
     image: "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",
   },
   {
-    text: "My CSR team partnered with Udaan and we saw transparent fund utilization and genuine impact. Rare in this space.",
+    text: "My CSR team partnered with Jan Vikas and we saw transparent fund utilization and genuine impact. Rare in this space.",
     name: "Ritu Sharma",
     role: "CSR Head, Delhi",
     image: "https://images.pexels.com/photos/8468470/pexels-photo-8468470.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop",

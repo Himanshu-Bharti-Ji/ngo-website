@@ -60,14 +60,14 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* Map image */}
+              {/* Location image */}
               <div className="mt-6 relative overflow-hidden rounded-2xl">
-                <img src="https://images.pexels.com/photos/6646907/pexels-photo-6646907.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop"
-                  alt="Visit us" className="w-full h-44 sm:h-52 object-cover" />
+                <img src="https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop"
+                  alt="Jan Vikas office and training campus" className="w-full h-44 sm:h-52 object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d2b1a]/80 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5">
-                  <p className="text-white font-bold text-base mb-0.5">Visit Us</p>
-                  <p className="text-slate-300 text-xs">New Delhi — open Mon–Sat. Walk-ins welcome.</p>
+                  <p className="text-white font-bold text-base mb-0.5">Visit our office</p>
+                  <p className="text-slate-300 text-xs">Imli Chowk, Baswaria, Bettiah, West Champaran, Bihar – open Mon–Sat.</p>
                 </div>
               </div>
             </div>

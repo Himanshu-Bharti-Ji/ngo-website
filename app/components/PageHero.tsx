@@ -26,7 +26,7 @@ export default function PageHero({ image, title, subtitle, useNgoInTitle }: Page
         <div className="flex items-center gap-3 mb-4">
           <div className="w-6 h-[2px] bg-amber-400 rounded-full" />
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-amber-300">
-            Udaan Foundation
+            {ngo.name}
           </span>
         </div>
 
