@@ -1,6 +1,8 @@
 // app/content/pagesContent.ts
 // Static content for all pages - edit here to update site content
 
+import { NGO } from "./homeContent";
+
 export const aboutContent = {
   hero: {
     image:
@@ -265,8 +267,30 @@ export const galleryContent = {
     subtitle: "Visual documentation of our programs and community impact",
   },
   images: [
+    // cloudinary photos from the NGO collection
     {
       id: 1,
+      src: NGO.bookDistribution,
+      title: "Book distribution event",
+      category: "Education",
+      description: "Teachers and volunteers handing out books to children",
+    },
+    {
+      id: 2,
+      src: NGO.communityWorkshop,
+      title: "Community workshop",
+      category: "Community",
+      description: "Local residents participating in a skills workshop",
+    },
+    {
+      id: 3,
+      src: NGO.farmVisit,
+      title: "Farm visit",
+      category: "Community",
+      description: "Small farmers learning sustainable practices",
+    },
+    {
+      id: 4,
       src: "https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
       title: "Education Program - Students in Classroom",
       category: "Education",

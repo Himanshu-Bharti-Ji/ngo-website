@@ -10,6 +10,7 @@ import {
 import {
   impactStats, services, homeGalleryImages, homeVideos,
   homeNews, photoStrip, impactStories, testimonials, featuredStory,
+  ngoActivities,
 } from "./content/homeContent";
 
 export default function Home() {
@@ -121,6 +122,28 @@ export default function Home() {
             <Link href="/what-we-do" className="inline-flex items-center gap-2 px-7 py-3 rounded-full border-2 border-[#0d2b1a] text-[#0d2b1a] font-semibold text-sm hover:bg-[#0d2b1a] hover:text-white transition-all">
               Explore all programs <ArrowRight size={15} />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ACTIVITIES GRID (images provided via Cloudinary) */}
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center mb-10 sm:mb-14">
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-600 mb-4">Our activities</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1208] leading-tight" style={{fontFamily:"'Playfair Display', serif"}}>
+              What we do <em className="text-emerald-700">on the ground</em>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {ngoActivities.map((act) => (
+              <div key={act.key} className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                <img src={act.image} alt={act.label} className="w-full h-44 sm:h-52 object-cover" />
+                <div className="p-4 bg-white">
+                  <h3 className="text-lg font-semibold text-[#1a1208]">{act.label}</h3>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
