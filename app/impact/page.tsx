@@ -1,6 +1,7 @@
 import PageHero from "../components/PageHero";
 import { Award, TrendingUp, Users, Heart, CheckCircle } from "lucide-react";
 import { impactContent } from "../content/pagesContent";
+import { NGO } from "../content/ngoImages";
 
 const storyIconMap: Record<string, React.ReactNode> = {
   award: <Award size={28} className="text-amber-400" />,
@@ -17,10 +18,10 @@ const storyImages = [
 ];
 
 const byNumbersBg = [
-  "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
-  "https://images.pexels.com/photos/8472016/pexels-photo-8472016.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
-  "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
-  "https://images.pexels.com/photos/8844781/pexels-photo-8844781.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+  NGO.bookDistribution,
+  NGO.awarenessProgram,
+  NGO.sewingTraining,
+  NGO.childlineCommunityMeet,
 ];
 
 const byNumbersLabels = ["Education", "Healthcare", "Livelihood", "Community"];
