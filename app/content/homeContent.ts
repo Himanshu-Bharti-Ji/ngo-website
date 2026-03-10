@@ -1,19 +1,4 @@
-// app/content/homeContent.ts
-
-export const NGO = {
-  bookDistribution:
-    "https://res.cloudinary.com/himanshubharti/image/upload/v1772623006/Jan%20Vikas/book-distribution.jpg",
-  communityWorkshop:
-    "https://res.cloudinary.com/himanshubharti/image/upload/v1772623007/Jan%20Vikas/community-workshop.jpg",
-  childCircle:
-    "https://res.cloudinary.com/himanshubharti/image/upload/v1772623007/Jan%20Vikas/child-circle.jpg",
-  awarenessProgram:
-    "https://res.cloudinary.com/himanshubharti/image/upload/v1772623007/Jan%20Vikas/awareness-program.jpg",
-  farmVisit:
-    "https://res.cloudinary.com/himanshubharti/image/upload/v1772623008/Jan%20Vikas/farm-visit.jpg",
-  farmerField:
-    "https://res.cloudinary.com/himanshubharti/image/upload/v1772623008/Jan%20Vikas/farmer-field.jpg",
-};
+import { NGO } from "./ngoImages";
 
 // derived arrays for convenience
 export const ngoActivities = [
@@ -21,20 +6,38 @@ export const ngoActivities = [
     key: "bookDistribution",
     label: "Book distribution",
     image: NGO.bookDistribution,
+    desc: "Distributing learning materials to children from Dalit, minority and leprosy‑affected families so they can continue schooling",
   },
   {
     key: "communityWorkshop",
     label: "Community workshop",
     image: NGO.communityWorkshop,
+    desc: "Village‑level meetings on rights, health, agriculture and social issues for women, farmers and youth",
   },
-  { key: "childCircle", label: "Child circle", image: NGO.childCircle },
+  {
+    key: "childCircle",
+    label: "Child circle",
+    image: NGO.childCircle2,
+    desc: "Children’s groups where boys and girls learn about protection, life skills and leadership",
+  },
   {
     key: "awarenessProgram",
     label: "Awareness program",
-    image: NGO.awarenessProgram,
+    image: NGO.childlineCommunityMeet,
+    desc: "Campaigns on female foeticide, child marriage, health and hygiene led by Mahila Mandals and youth volunteers",
   },
-  { key: "farmVisit", label: "Farm visit", image: NGO.farmVisit },
-  { key: "farmerField", label: "Farmer field", image: NGO.farmerField },
+  {
+    key: "farmVisit",
+    label: "Farm visit",
+    image: NGO.farmVisit,
+    desc: "Exposure visits for farmers to demonstration plots to learn scientific and organic farming practices",
+  },
+  {
+    key: "farmerField",
+    label: "Farmer field",
+    image: NGO.farmerField,
+    desc: "Field‑level support to farmers on crop planning, PoPs and low‑cost inputs",
+  },
 ];
 
 export const heroSlides = [
@@ -45,7 +48,7 @@ export const heroSlides = [
     eyebrow: "Children first",
     title: "Protect every child.\nKeep every girl in school.",
     subtitle:
-      "Bridge Course Residential Camps, learning centres, CHILDLINE 1098 and Railway CHILDLINE protecting children in and around West Champaran.",
+      "Bridge Course Residential Camps, community learning centres, CHILDLINE 1098 and Railway CHILDLINE at Narkatiyaganj Railway Station safeguard children in and around West Champaran from abuse, trafficking and early marriage while helping them stay in school",
     primaryCta: { label: "Support our child work", href: "/get-involved" },
     secondaryCta: { label: "Know what we do", href: "/what-we-do" },
     badge: "Since 1991 in West Champaran",
@@ -56,7 +59,7 @@ export const heroSlides = [
     eyebrow: "Women, health & dignity",
     title: "When women are\nhealthy and informed.",
     subtitle:
-      "Kopal Project on female foeticide, health promotion and support to leprosy‑affected families so women and children can live with dignity.",
+      "Through the Kopal Project, Jan Vikas prevents female foeticide under the PNDT Act, improves women’s and children’s health, and supports leprosy‑affected families to live with dignity",
     primaryCta: { label: "Stand with women", href: "/get-involved" },
     secondaryCta: { label: "See our impact", href: "/impact" },
     badge: "Working with women’s groups",
@@ -67,7 +70,7 @@ export const heroSlides = [
     eyebrow: "Farmers & the land",
     title: "Reviving agriculture‑based\nlivelihoods on the border.",
     subtitle:
-      "Supporting small farmers in Nepal‑bordering districts of Eastern Uttar Pradesh and Northern Bihar with sustainable, low‑cost agriculture and SHG‑based livelihoods.",
+      "Jan Vikas works with small and marginal farmers in Nepal‑bordering districts of Eastern Uttar Pradesh and Northern Bihar to promote scientific, area‑specific agricultural PoPs, organic manuring and SHG‑based livelihoods that reduce the cost of cultivation",
     primaryCta: { label: "Support livelihoods", href: "/get-involved" },
     secondaryCta: { label: "Explore programmes", href: "/what-we-do" },
     badge: "Sustainable agriculture & SHGs",
@@ -98,7 +101,7 @@ export const services = [
     key: "education",
     title: "Education & Child Protection",
     description:
-      "Bridge Course Residential Camps, learning centres and CHILDLINE services that protect children from abuse, trafficking and child marriage while enabling learning.",
+      "Bridge Course Residential Camps, learning centres and CHILDLINE services for out‑of‑school and at‑risk children, helping them return to school and stay protected from abuse, trafficking and child marriage",
     // use book distribution image from cloudinary
     imageUrl: NGO.bookDistribution,
   },
@@ -114,7 +117,7 @@ export const services = [
     key: "community",
     title: "Sustainable Agriculture & SHGs",
     description:
-      "Women’s Self Help Groups, Mahila Mandals and small farmers adopting sustainable, low‑cost agriculture and strengthening local governance.",
+      "Women’s Self Help Groups, Mahila Mandals and small farmers adopt sustainable, low‑cost agriculture, use crop‑wise PoPs and strengthen local governance institutions",
     // farm visit image fits community & agriculture
     imageUrl: NGO.farmVisit,
   },
@@ -123,7 +126,7 @@ export const services = [
 // ── NEW: Featured story (large pull quote) ──
 export const featuredStory = {
   quote:
-    "We started with a handful of committed people in Bettiah. Today, communities themselves lead the struggle for justice and dignity.",
+    "We began in 1991 with a small team in Bettiah. Today, women’s groups, children’s collectives and farmers’ organizations themselves lead the struggle for justice and dignity",
   name: "Team Jan Vikas",
   detail: "Grassroots organisation based in West Champaran, Bihar",
   image:
@@ -172,133 +175,107 @@ export const impactStories = [
 
 // ── Photo wall: 10 images in a masonry-style grid ──
 export const homeGalleryImages = [
-  // user-supplied images from Cloudinary (NGO activities)
   {
     src: NGO.bookDistribution,
-    alt: "Book distribution event",
-    label: "Book distribution",
+    alt: "NGO volunteers distributing books to children",
+    label: "Book distribution drive",
     span: "col-span-2 row-span-2",
   },
   {
     src: NGO.communityWorkshop,
-    alt: "Community workshop session",
+    alt: "Community development workshop with villagers",
     label: "Community workshop",
     span: "",
   },
   {
     src: NGO.childCircle,
-    alt: "Child circle meeting",
-    label: "Child circle",
+    alt: "Child protection circle where children learn about safety and leadership",
+    label: "Child protection circle",
     span: "",
   },
   {
     src: NGO.awarenessProgram,
-    alt: "Health awareness program",
-    label: "Awareness program",
-    span: "",
+    alt: "Health and social awareness program",
+    label: "Mahila Mandal awareness meet",
+    span: "col-span-2",
   },
   {
     src: NGO.farmVisit,
-    alt: "Participants on a farm visit",
-    label: "Farm visit",
+    alt: "NGO team visiting farmers for field support",
+    label: "Farmer field visit",
     span: "",
   },
   {
     src: NGO.farmerField,
-    alt: "Farmers working in a field",
-    label: "Farmer field",
+    alt: "Farmers working in agricultural field",
+    label: "Sustainable farming plot",
     span: "",
   },
   {
-    src: "https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-    alt: "Teacher supporting students in a rural classroom",
-    label: "Rural classroom · Rajasthan",
+    src: NGO.childlineRecognition,
+    alt: "Recognition ceremony for Childline community partners",
+    label: "Childline recognition",
+    span: "row-span-2",
+  },
+  {
+    src: NGO.sewingTraining,
+    alt: "Women learning tailoring in vocational training",
+    label: "Tailoring training class",
+    span: "",
+  },
+  {
+    src: NGO.sewingCertificates,
+    alt: "Women receiving sewing training certificates",
+    label: "Skill certificates",
+    span: "col-span-2",
+  },
+  {
+    src: NGO.childlineCommunityMeet,
+    alt: "Community meeting organized under Childline initiative",
+    label: "Childline village meet",
+    span: "",
+  },
+  {
+    src: NGO.schoolSportsActivity,
+    alt: "School children performing physical activities",
+    label: "School sports activity",
+    span: "col-span-2",
+  },
+  {
+    src: NGO.childlineSportsDay,
+    alt: "Childline team and children celebrating sports day",
+    label: "Childline sports day",
+    span: "col-span-2",
+  },
+  {
+    src: NGO.childCircle2,
+    alt: "Child protection discussion circle under tree",
+    label: "Outdoor child circle",
+    span: "row-span-2",
+  },
+  {
+    src: NGO.girlsDrawingClass,
+    alt: "Girls participating in drawing competition",
+    label: "Girls drawing class",
+    span: "row-span-2",
+  },
+  {
+    src: NGO.childrenArtActivity,
+    alt: "Children drawing and doing art activities in classroom",
+    label: "Children art activity",
     span: "col-span-2 row-span-2",
   },
   {
-    src: "https://images.pexels.com/photos/7100371/pexels-photo-7100371.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Women attending a self-help group meeting",
-    label: "Women self-help group",
-    span: "",
+    src: NGO.govtOfficeMeeting,
+    alt: "Government office coordination meeting for child welfare",
+    label: "Govt coordination meet",
+    span: "col-span-2 row-span-2",
   },
   {
-    src: "https://images.pexels.com/photos/8472016/pexels-photo-8472016.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Health worker checking a child at outreach camp",
-    label: "Village health camp",
-    span: "",
-  },
-  {
-    src: "https://images.pexels.com/photos/7750326/pexels-photo-7750326.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Volunteers planting trees with children",
-    label: "Tree plantation drive",
-    span: "",
-  },
-  {
-    src: "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Children smiling in front of a learning center",
-    label: "Community learning center",
-    span: "",
-  },
-  {
-    src: "https://images.pexels.com/photos/6646962/pexels-photo-6646962.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Volunteer talking to a child",
-    label: "Child protection program",
-    span: "",
-  },
-  {
-    src: "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Classroom infrastructure support",
-    label: "School infrastructure",
-    span: "",
-  },
-  {
-    src: "https://images.pexels.com/photos/8844781/pexels-photo-8844781.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Community development project",
-    label: "Community development",
-    span: "",
-  },
-  {
-    src: "https://images.pexels.com/photos/8468470/pexels-photo-8468470.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop",
-    alt: "Women empowerment drive",
-    label: "Women empowerment",
-    span: "",
-  },
-  // additional images from our cloudinary collection – more specific to Jan Vikas activities
-  {
-    src: NGO.bookDistribution,
-    alt: "Book distribution event",
-    label: "Book distribution",
-    span: "",
-  },
-  {
-    src: NGO.communityWorkshop,
-    alt: "Community workshop",
-    label: "Community workshop",
-    span: "",
-  },
-  {
-    src: NGO.childCircle,
-    alt: "Child circle activity",
-    label: "Child protection program",
-    span: "",
-  },
-  {
-    src: NGO.awarenessProgram,
-    alt: "Health awareness program",
-    label: "Awareness program",
-    span: "",
-  },
-  {
-    src: NGO.farmVisit,
-    alt: "Farm visit with farmers",
-    label: "Farm visit",
-    span: "",
-  },
-  {
-    src: NGO.farmerField,
-    alt: "Farmer working field",
-    label: "Farmer field",
-    span: "",
+    src: NGO.dcpcReviewMeeting,
+    alt: "District Child Protection Committee review meeting",
+    label: "DCPC review meeting",
+    span: "col-span-2 row-span-2",
   },
 ];
 
@@ -338,48 +315,51 @@ export const homeNews = [
   {
     date: "Feb 2024",
     category: "Education",
-    title: "500 children receive scholarships in latest batch",
-    image:
-      "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    title: "Bridge Course camps re‑enroll 120 out‑of‑school children",
+    summary:
+      "Bridge Course Residential Camps in West Champaran helped 120 children rejoin nearby government schools this academic year.",
+    image: NGO.bookDistribution,
     href: "/news",
   },
   {
     date: "Feb 2024",
-    category: "Healthcare",
-    title: "Health camps reach 10 new villages in Madhya Pradesh",
-    image:
-      "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    category: "Health",
+    title: "Health awareness camps in 10 villages",
+    summary:
+      "Kopal Project teams organised mother‑child health and PNDT awareness sessions with Mahila Mandals across 10 villages of West Champaran.",
+    image: NGO.awarenessProgram,
     href: "/news",
   },
   {
     date: "Jan 2024",
-    category: "Livelihood",
-    title: "300 skill training graduates secure employment",
-    image:
-      "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    category: "Livelihoods",
+    title: "Women complete sewing and tailoring training",
+    summary:
+      "Women from SHGs at the Jan Vikas training centre received certificates in basic sewing, opening up new livelihood options.",
+    image: NGO.sewingCertificates,
     href: "/news",
   },
 ];
 
 // ── NEW: Scrolling photo strip ──
 export const photoStrip = [
-  "https://images.pexels.com/photos/6646907/pexels-photo-6646907.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/6818005/pexels-photo-6818005.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/8472016/pexels-photo-8472016.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/7100371/pexels-photo-7100371.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/8844781/pexels-photo-8844781.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/6646962/pexels-photo-6646962.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/7750326/pexels-photo-7750326.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  "https://images.pexels.com/photos/8468470/pexels-photo-8468470.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&fit=crop",
-  // add cloudinary activity images for more specific content
   NGO.bookDistribution,
+  NGO.sewingCertificates,
+  NGO.childCircle2,
   NGO.communityWorkshop,
+  NGO.sewingTraining,
+  NGO.childlineSportsDay,
+  NGO.schoolSportsActivity,
+  NGO.childlineCommunityMeet,
   NGO.childCircle,
+  NGO.girlsDrawingClass,
+  NGO.childrenArtActivity,
   NGO.awarenessProgram,
   NGO.farmVisit,
   NGO.farmerField,
+  NGO.childlineRecognition,
+  NGO.govtOfficeMeeting,
+  NGO.dcpcReviewMeeting,
 ];
 
 // ── NEW: Testimonial from donor/volunteer ──

@@ -16,12 +16,12 @@ import { whatWeDoContent } from "../content/pagesContent";
 import type { ReactNode } from "react";
 
 const iconMap: Record<string, ReactNode> = {
-  education: <GraduationCap size={40} />,
-  healthcare: <Heart size={40} />,
-  community: <Users size={40} />,
-  skills: <Briefcase size={40} />,
-  family: <Users2 size={40} />,
-  environment: <Leaf size={40} />,
+  education: <GraduationCap size={20} />,
+  healthcare: <Heart size={20} />,
+  community: <Users size={20} />,
+  skills: <Briefcase size={20} />,
+  family: <Users2 size={20} />,
+  environment: <Leaf size={20} />,
 };
 
 export default function WhatWeDo() {
@@ -57,7 +57,7 @@ export default function WhatWeDo() {
             {programs.map((program) => (
               <ServiceCard
                 key={program.key}
-                icon={iconMap[program.key] || <Users size={40} />}
+                icon={iconMap[program.key] || <Users size={20} />}
                 title={program.title}
                 description={program.description}
                 imageUrl={program.imageUrl}

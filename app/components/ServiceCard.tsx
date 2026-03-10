@@ -24,7 +24,7 @@ export default function ServiceCard({
 
       <div className="p-7">
         <div className="flex items-start justify-between mb-4">
-          <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 transition-all duration-300">
+          <div className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-700 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 transition-all duration-300">
             {icon}
           </div>
           <div className="w-8 h-8 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-[#0d2b1a] group-hover:text-white group-hover:border-[#0d2b1a] transition-all duration-300">
@@ -38,7 +38,7 @@ export default function ServiceCard({
 
         <div className="w-8 h-0.5 bg-amber-400 rounded-full mb-3 group-hover:w-16 transition-all duration-300" />
 
-        <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
+        <p className="text-xs text-gray-500 leading-relaxed">{description}</p>
       </div>
     </div>
   );

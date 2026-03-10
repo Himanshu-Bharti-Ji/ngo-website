@@ -1,12 +1,11 @@
 // app/content/pagesContent.ts
 // Static content for all pages - edit here to update site content
 
-import { NGO } from "./homeContent";
+import { NGO } from "./ngoImages";
 
 export const aboutContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.childlineRecognition,
     title: "About Jan Vikas",
     subtitle:
       "A grassroots organisation from Bettiah, West Champaran, building a justice-based and self-reliant society since 1991.",
@@ -42,8 +41,7 @@ export const aboutContent = {
 
 export const whatWeDoContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/7100371/pexels-photo-7100371.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.childlineCommunityMeet,
     title: "What We Do",
     subtitle:
       "Programmes rooted in child protection, women’s empowerment, sustainable agriculture and rights-based development.",
@@ -54,48 +52,42 @@ export const whatWeDoContent = {
       title: "Education & Child Protection",
       description:
         "Bridge course residential camps, learning centres and CHILDLINE interventions that protect children from abuse, child labour, trafficking and early marriage, while ensuring access to joyful education.",
-      imageUrl:
-        "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+      imageUrl: NGO.bookDistribution,
     },
     {
       key: "healthcare",
       title: "Health, Gender & Leprosy Support",
       description:
         "Promotion of educational and health status of women and children, control of female foeticide (Kopal Project under the PNDT Act), and long‑term educational and social welfare support for leprosy‑affected families.",
-      imageUrl:
-        "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+      imageUrl: NGO.awarenessProgram,
     },
     {
       key: "community",
       title: "Governance, Rights & Community Institutions",
       description:
         "Strengthening Panchayati Raj institutions, Mahila Mandals, youth and community‑based organisations to claim rights, participate in local governance and safeguard children in distress.",
-      imageUrl:
-        "https://images.pexels.com/photos/8844781/pexels-photo-8844781.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+      imageUrl: NGO.childlineCommunityMeet,
     },
     {
       key: "skills",
       title: "SHGs & Livelihood Skills",
       description:
         "Formation and nurturing of women’s Self Help Groups (SHGs), leadership development, and skill‑building for sustainable livelihoods and financial inclusion.",
-      imageUrl:
-        "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+      imageUrl: NGO.sewingTraining,
     },
     {
       key: "family",
       title: "Support for Leprosy‑Affected Families",
       description:
         "Educational, social welfare and psycho‑social support for families affected by leprosy, addressing stigma, exclusion and long‑term rehabilitation.",
-      imageUrl:
-        "https://images.pexels.com/photos/7100371/pexels-photo-7100371.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+      imageUrl: NGO.childlineRecognition,
     },
     {
       key: "environment",
       title: "Sustainable Agriculture & Environment",
       description:
         "Revival of agriculture‑based livelihoods through scientific, area‑specific Packages of Practices (PoPs), organic manuring, composting, biogas and fruit tree plantation along bunds.",
-      imageUrl:
-        "https://images.pexels.com/photos/7750326/pexels-photo-7750326.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
+      imageUrl: NGO.farmVisit,
     },
   ],
   programDetails: [
@@ -140,10 +132,10 @@ export const whatWeDoContent = {
 
 export const impactContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/8472016/pexels-photo-8472016.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.sewingCertificates,
     title: "Our Impact",
-    subtitle: "Stories of change from West Champaran, East Champaran, Sitamarhi and neighbouring regions",
+    subtitle:
+      "Stories of change from West Champaran, East Champaran, Sitamarhi and neighbouring regions",
   },
   stats: [
     { number: "35+", label: "Years of grassroots work" },
@@ -203,21 +195,24 @@ export const impactContent = {
 
 export const teamContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/6646962/pexels-photo-6646962.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.childlineSportsDay,
     title: "Our Team",
-    subtitle: "Led by experienced social activists with deep roots in the field",
+    subtitle:
+      "Led by experienced social activists with deep roots in West Champaran",
+  },
+  president: {
+    name: "Mr. Abdul Majeed",
+    position: "President, Jan Vikas",
+    image: NGO.communityWorkshop,
+    highlight:
+      "Founder and president of Jan Vikas with over 34 years of experience in social development.",
+    bio: "Mr. Abdul Majeed is a qualified and widely respected social worker with around 34 years of experience in education, economic planning, social organisation, integrated development and livelihood promotion. He has served as Programme Officer, Coordinator, Resource Person and Consultant with organisations such as IGSSS, NEG, D.K. Austria, Development Alternatives, PACS and SDTT. He leads Jan Vikas with a strong commitment to team work and result‑oriented grassroots action.",
   },
   members: [
     {
-      name: "Mr. Abdul Majeed",
-      position: "President, Jan Vikas",
-      bio: "Mr. A. Majeed is a qualified and widely respected social worker with around 34 years of experience in education, economic planning, social organisation, integrated development and livelihood promotion. He has served as Programme Officer, Coordinator, Resource Person and Consultant with organisations such as IGSSS, NEG, D.K. Austria, Development Alternatives, PACS and SDTT. He leads Jan Vikas with a strong commitment to team work and result‑oriented grassroots action.",
-    },
-    {
       name: "Programme Coordination Team",
       position: "Child Protection & Education",
-      bio: "A dedicated team of social workers and community organisers who run CHILDLINE 1098, Railway CHILDLINE, Bridge Course Residential Camps and learning centres for Dalit, minority and leprosy‑affected children.",
+      bio: "Social workers and community organisers who run CHILDLINE 1098, Railway CHILDLINE, Bridge Course Residential Camps and learning centres for Dalit, minority and leprosy‑affected children.",
     },
     {
       name: "Women’s Collectives & SHG Team",
@@ -244,130 +239,190 @@ export const teamContent = {
     {
       title: "Compassion",
       icon: "heart",
-      text: "We are driven by genuine care for the communities we serve. Every team member is committed to making a real difference.",
+      text: "We are grounded in solidarity with children, women, farmers and leprosy‑affected families in our working areas.",
     },
     {
-      title: "Excellence",
+      title: "Field‑driven learning",
       icon: "eye",
-      text: "We strive for excellence in all our programs and initiatives. Quality outcomes for our beneficiaries is our priority.",
+      text: "Programmes are continuously refined based on field realities and community feedback from West Champaran and neighbouring districts.",
     },
     {
       title: "Transparency",
       icon: "users",
-      text: "We maintain complete transparency in our operations and financial management, building trust with all stakeholders.",
+      text: "We maintain accountable and transparent systems to build trust with communities, partners and government institutions.",
     },
   ],
 };
 
 export const galleryContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.bookDistribution,
     title: "Photo Gallery",
-    subtitle: "Visual documentation of our programs and community impact",
+    subtitle: "Scenes from our work with children, women and farmers",
   },
   images: [
-    // cloudinary photos from the NGO collection
     {
       id: 1,
       src: NGO.bookDistribution,
-      title: "Book distribution event",
+      title: "Book distribution drive",
       category: "Education",
-      description: "Teachers and volunteers handing out books to children",
+      description:
+        "Books distributed to children from Dalit and minority communities at Jan Vikas learning centre in West Champaran.",
     },
     {
       id: 2,
       src: NGO.communityWorkshop,
       title: "Community workshop",
       category: "Community",
-      description: "Local residents participating in a skills workshop",
+      description:
+        "Village‑level meeting on local governance, rights and social issues with women and community leaders.",
     },
     {
       id: 3,
-      src: NGO.farmVisit,
-      title: "Farm visit",
-      category: "Community",
-      description: "Small farmers learning sustainable practices",
+      src: NGO.childCircle,
+      title: "Child circle",
+      category: "Child Protection",
+      description:
+        "Children’s circle where boys and girls discuss safety, life skills and protection from abuse and trafficking.",
     },
     {
       id: 4,
-      src: "https://images.pexels.com/photos/6995216/pexels-photo-6995216.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Education Program - Students in Classroom",
-      category: "Education",
-      description: "Children participating in our literacy program",
-    },
-    {
-      id: 2,
-      src: "https://images.pexels.com/photos/8472016/pexels-photo-8472016.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Health Camp Activity",
-      category: "Healthcare",
-      description: "Free medical check-up camp in rural village",
-    },
-    {
-      id: 3,
-      src: "https://images.pexels.com/photos/7100371/pexels-photo-7100371.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Community Gathering",
-      category: "Community",
-      description: "Village members at our community development event",
-    },
-    {
-      id: 4,
-      src: "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Skill Training Workshop",
-      category: "Livelihood",
-      description: "Women learning tailoring and vocational skills",
+      src: NGO.childCircle2,
+      title: "Outdoor child circle",
+      category: "Child Protection",
+      description:
+        "Childline team conducting an open‑air protection session with children under a tree in the village.",
     },
     {
       id: 5,
-      src: "https://images.pexels.com/photos/8500300/pexels-photo-8500300.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "School Infrastructure Development",
-      category: "Education",
-      description: "New classroom built through our initiative",
+      src: NGO.awarenessProgram,
+      title: "Awareness programme",
+      category: "Health",
+      description:
+        "Mahila Mandal‑led awareness programme on health, hygiene and social issues at community hall.",
     },
     {
       id: 6,
-      src: "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Scholarship Distribution",
-      category: "Education",
-      description: "Distributing scholarships to deserving students",
+      src: NGO.farmVisit,
+      title: "Farm visit",
+      category: "Livelihoods",
+      description:
+        "Exposure visit for small and marginal farmers to demonstration plots on improved agriculture practices.",
     },
     {
       id: 7,
-      src: "https://images.pexels.com/photos/8468470/pexels-photo-8468470.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Women Empowerment Drive",
-      category: "Community",
-      description: "Women beneficiaries of our programs",
+      src: NGO.farmerField,
+      title: "Farmer field support",
+      category: "Livelihoods",
+      description:
+        "Jan Vikas staff guiding farmers on crop‑wise Package of Practices and low‑cost inputs in the field.",
     },
     {
       id: 8,
-      src: "https://images.pexels.com/photos/7750326/pexels-photo-7750326.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Environmental Awareness",
-      category: "Environment",
-      description: "Tree plantation drive in community",
+      src: NGO.sewingTraining,
+      title: "Tailoring training",
+      category: "Women",
+      description:
+        "Women learning sewing and tailoring at the Jan Vikas Silai Katai training centre to improve livelihoods.",
     },
     {
       id: 9,
-      src: "https://images.pexels.com/photos/6646962/pexels-photo-6646962.jpeg?auto=compress&cs=tinysrgb&w=1000&h=700&fit=crop",
-      title: "Children at Learning Center",
+      src: NGO.sewingCertificates,
+      title: "Skill certification",
+      category: "Women",
+      description:
+        "Participants receiving certificates after completing sewing and tailoring course supported by Jan Vikas.",
+    },
+    {
+      id: 10,
+      src: NGO.childlineRecognition,
+      title: "Childline recognition",
+      category: "Child Protection",
+      description:
+        "Childline Se Dosti celebration recognising community partners and volunteers for child protection efforts.",
+    },
+    {
+      id: 11,
+      src: NGO.childlineSportsDay,
+      title: "Childline sports day",
+      category: "Child Protection",
+      description:
+        "Children and Childline team taking part in sports and games to build confidence and teamwork.",
+    },
+    {
+      id: 12,
+      src: NGO.schoolSportsActivity,
+      title: "School sports activity",
       category: "Education",
-      description: "Happy children at our learning center",
+      description:
+        "Children in school uniforms participating in physical activities supported by Jan Vikas.",
+    },
+    {
+      id: 13,
+      src: NGO.childrenArtActivity,
+      title: "Children’s art class",
+      category: "Education",
+      description:
+        "Children engaged in drawing and creative activities at Jan Vikas learning centre.",
+    },
+    {
+      id: 14,
+      src: NGO.girlsDrawingClass,
+      title: "Girls drawing competition",
+      category: "Education",
+      description:
+        "Girls taking part in drawing competition to encourage creativity and confidence.",
+    },
+    {
+      id: 15,
+      src: NGO.childlineCommunityMeet,
+      title: "Childline community meet",
+      category: "Child Protection",
+      description:
+        "Childline community meeting in decorated tent to spread awareness on 1098 helpline and child rights.",
+    },
+    {
+      id: 16,
+      src: NGO.govtOfficeMeeting,
+      title: "Government coordination meeting",
+      category: "Governance",
+      description:
+        "District‑level coordination meeting with government officials on child protection and related issues.",
+    },
+    {
+      id: 17,
+      src: NGO.dcpcReviewMeeting,
+      title: "DCPC review meeting",
+      category: "Governance",
+      description:
+        "District Child Protection Committee (DCPC) and Child Advisory Board review meeting with Jan Vikas team.",
     },
   ],
   categories: [
     {
       title: "Education",
       description:
-        "Images from our education programs, learning centers, and scholarship distributions.",
+        "Learning centres, Bridge Course camps, sports and creative activities for children and adolescents.",
     },
     {
-      title: "Healthcare",
+      title: "Child Protection",
       description:
-        "Health camps, medical services, and wellness initiatives across communities.",
+        "CHILDLINE outreach, child circles and community meetings on child rights and safety.",
     },
     {
-      title: "Community",
+      title: "Women & Livelihoods",
       description:
-        "Community gatherings, development projects, and village transformations.",
+        "Mahila Mandals, tailoring trainings and livelihood initiatives led by women.",
+    },
+    {
+      title: "Livelihoods & Agriculture",
+      description:
+        "Farm visits, demonstration plots and support to small farmers in border districts.",
+    },
+    {
+      title: "Governance & Organisation",
+      description:
+        "Partnership meetings with government, DCPC reviews and the Jan Vikas team in action.",
     },
   ],
 };
@@ -442,62 +497,143 @@ export const mediaContent = {
     },
   ],
   videoCategories: [
-    { title: "Education Stories", count: "8 Videos", description: "Stories of educational transformation and student success" },
-    { title: "Healthcare Initiatives", count: "6 Videos", description: "Health camps and wellness programs in action" },
-    { title: "Community Voices", count: "5 Videos", description: "Testimonials from community beneficiaries" },
+    {
+      title: "Education Stories",
+      count: "8 Videos",
+      description: "Stories of educational transformation and student success",
+    },
+    {
+      title: "Healthcare Initiatives",
+      count: "6 Videos",
+      description: "Health camps and wellness programs in action",
+    },
+    {
+      title: "Community Voices",
+      count: "5 Videos",
+      description: "Testimonials from community beneficiaries",
+    },
   ],
 };
 
 export const newsContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/6647003/pexels-photo-6647003.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.childlineCommunityMeet,
     title: "News & Updates",
-    subtitle: "Stay informed about our latest programs and initiatives",
+    subtitle: "Stories and updates from our work in Bihar and border districts",
   },
   items: [
-    { date: "2024-02-15", title: "500 Children Receive Scholarships", description: "We are proud to announce our latest scholarship batch benefiting 500 deserving children across rural India.", category: "Education" },
-    { date: "2024-02-01", title: "Health Camp in 10 Villages", description: "Our comprehensive health camp reached 2,000 people in 10 villages, providing free medical check-ups and awareness.", category: "Healthcare" },
-    { date: "2024-01-20", title: "Skill Training Graduates Get Jobs", description: "Proud moment! 300 graduates from our skill training program have secured employment with sustainable income.", category: "Livelihood" },
-    { date: "2024-01-10", title: "New Learning Center Inaugurated", description: "We opened a new state-of-the-art learning center in Uttar Pradesh to serve 500+ children in the region.", category: "Education" },
-    { date: "2023-12-25", title: "Community Festival Brings People Together", description: "Our annual community festival celebrated by 5,000+ people, strengthening bonds and building awareness.", category: "Community" },
-    { date: "2023-12-10", title: "Women Empowerment Program Success", description: "Women from our program successfully started 50 micro-businesses, contributing to their family income.", category: "Livelihood" },
+    {
+      date: "2024-02-20",
+      title: "Bridge Course camps re‑enroll 120 children",
+      description:
+        "Bridge Course Residential Camps run by Jan Vikas in West Champaran supported 120 out‑of‑school children to rejoin nearby government schools at the start of the new academic year.",
+      category: "Education",
+      image: NGO.bookDistribution,
+    },
+    {
+      date: "2024-02-10",
+      title: "Health awareness camps held in 10 villages",
+      description:
+        "Under the Kopal Project, Mahila Mandals and Jan Vikas teams conducted mother‑child health and PNDT awareness sessions in 10 villages across West Champaran.",
+      category: "Health",
+      image: NGO.awarenessProgram,
+    },
+    {
+      date: "2024-01-30",
+      title: "Women complete sewing and tailoring training",
+      description:
+        "Women from Self Help Groups completed basic sewing and tailoring training at the Jan Vikas centre and received certificates to support their livelihood journey.",
+      category: "Livelihoods",
+      image: NGO.sewingCertificates,
+    },
+    {
+      date: "2024-01-18",
+      title: "Childline community meet strengthens child protection",
+      description:
+        "Childline and Railway CHILDLINE teams organised a community meeting with local leaders and parents to raise awareness on the 1098 helpline and child rights.",
+      category: "Child Protection",
+      image: NGO.childlineCommunityMeet,
+    },
+    {
+      date: "2023-12-12",
+      title: "Farmers visit demonstration plots on improved practices",
+      description:
+        "Small and marginal farmers from border blocks participated in exposure visits to demonstration plots showcasing crop‑wise PoPs and organic manuring.",
+      category: "Livelihoods",
+      image: NGO.farmVisit,
+    },
+    {
+      date: "2023-11-25",
+      title: "Review meetings held with district child protection bodies",
+      description:
+        "Jan Vikas took part in District Child Protection Committee and Child Advisory Board review meetings to share field learnings and strengthen coordination.",
+      category: "Governance",
+      image: NGO.dcpcReviewMeeting,
+    },
   ],
 };
 
 export const getInvolvedContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/8468470/pexels-photo-8468470.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.dcpcReviewMeeting,
     title: "Get Involved",
     subtitle: "Join us in making a real difference in communities across India",
   },
   donationImpact: [
     { amount: "₹100", text: "Provides meals for 5 children for a day" },
-    { amount: "₹500", text: "Covers school supplies for one child for a month" },
+    {
+      amount: "₹500",
+      text: "Covers school supplies for one child for a month",
+    },
     { amount: "₹2,000", text: "Medical check-up camp for 50 people" },
     { amount: "₹10,000", text: "One year scholarship for a deserving child" },
     { amount: "₹50,000", text: "Vocational training for 10 individuals" },
   ],
   volunteerOpportunities: [
-    { title: "Education Support", text: "Teach, tutor, or facilitate learning programs in schools and centers." },
-    { title: "Health Awareness", text: "Assist in health camps and awareness programs (medical knowledge helpful but not required)." },
-    { title: "Community Projects", text: "Help in community development and infrastructure projects." },
-    { title: "Administrative", text: "Support office operations, data management, and coordination." },
-    { title: "Translation & Outreach", text: "Help with language support and community outreach activities." },
+    {
+      title: "Education Support",
+      text: "Teach, tutor, or facilitate learning programs in schools and centers.",
+    },
+    {
+      title: "Health Awareness",
+      text: "Assist in health camps and awareness programs (medical knowledge helpful but not required).",
+    },
+    {
+      title: "Community Projects",
+      text: "Help in community development and infrastructure projects.",
+    },
+    {
+      title: "Administrative",
+      text: "Support office operations, data management, and coordination.",
+    },
+    {
+      title: "Translation & Outreach",
+      text: "Help with language support and community outreach activities.",
+    },
   ],
   partnershipTypes: [
-    { title: "Corporate Partnerships", text: "CSR initiatives, employee volunteering programs, and resource sharing." },
-    { title: "Educational Institutions", text: "Collaborate on research, student projects, and community engagement." },
-    { title: "Healthcare Partners", text: "Hospitals and clinics for medical services and healthcare camps." },
-    { title: "Government Agencies", text: "Collaborate on public health and development initiatives." },
+    {
+      title: "Corporate Partnerships",
+      text: "CSR initiatives, employee volunteering programs, and resource sharing.",
+    },
+    {
+      title: "Educational Institutions",
+      text: "Collaborate on research, student projects, and community engagement.",
+    },
+    {
+      title: "Healthcare Partners",
+      text: "Hospitals and clinics for medical services and healthcare camps.",
+    },
+    {
+      title: "Government Agencies",
+      text: "Collaborate on public health and development initiatives.",
+    },
   ],
 };
 
 export const contactContent = {
   hero: {
-    image:
-      "https://images.pexels.com/photos/6646932/pexels-photo-6646932.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop",
+    image: NGO.govtOfficeMeeting,
     title: "Contact Jan Vikas",
     subtitle: "Reach our team in Bettiah, West Champaran",
   },
@@ -510,5 +646,12 @@ export const contactContent = {
     saturday: "Saturday: 10:00 AM - 5:00 PM",
     sunday: "Sunday & public holidays: Closed",
   },
-  formSubjects: ["Donation Inquiry", "Volunteer", "Program Information", "General Inquiry", "Other"],
+  formSubjects: [
+    "General Inquiry",
+    "Program Participation",
+    "Partnership Opportunities",
+    "Volunteer Interest",
+    "Media & Press",
+    "Other",
+  ],
 };

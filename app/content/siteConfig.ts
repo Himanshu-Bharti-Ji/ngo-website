@@ -20,7 +20,7 @@ export const ngo = {
     { href: "/impact", label: "Impact" },
     { href: "/team", label: "Our Team" },
     { href: "/gallery", label: "Gallery" },
-    { href: "/media", label: "Media" },
+    // { href: "/media", label: "Media" },
     { href: "/get-involved", label: "Get Involved" },
     { href: "/news", label: "News" },
     { href: "/contact", label: "Contact" },
