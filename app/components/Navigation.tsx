@@ -18,11 +18,13 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-200 ${
-      scrolled
-        ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100"
-        : "bg-white border-b border-gray-100"
-    }`}>
+    <nav
+      className={`sticky top-0 z-50 transition-all duration-200 ${
+        scrolled
+          ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100"
+          : "bg-white border-b border-gray-100"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-12">
           {/* Desktop nav */}
@@ -33,17 +35,30 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-2 text-[13px] font-medium rounded-md whitespace-nowrap transition-colors ${
-                    isActive
-                      ? "text-emerald-700 bg-emerald-50 font-semibold"
-                      : "text-gray-700 hover:text-emerald-700 hover:bg-emerald-50"
-                  }`}
+                  className="px-3 py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300"
                 >
-                  {link.label}
+                  <span
+                    className={`relative inline-block ${
+                      isActive
+                        ? "text-emerald-700 after:w-full"
+                        : "text-gray-700 hover:text-emerald-700 after:w-0"
+                    } after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:bg-emerald-600 after:transition-all after:duration-300`}
+                  >
+                    {link.label}
+                  </span>
                 </Link>
               );
             })}
           </div>
+          <div className="lg:hidden w-8" />
+
+          {/* Mobile: brand name */}
+          <span
+            className="lg:hidden text-sm font-bold text-[#0d2b1a]"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Jan Vikas
+          </span>
 
           {/* Mobile: hamburger */}
           <button
@@ -53,12 +68,6 @@ export default function Navigation() {
           >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
-
-          {/* Mobile: brand name */}
-          <span className="lg:hidden text-sm font-bold text-[#0d2b1a]" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Jan Vikas
-          </span>
-          <div className="lg:hidden w-8" />
         </div>
 
         {/* Mobile menu */}
@@ -72,13 +81,17 @@ export default function Navigation() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                      isActive
-                        ? "text-emerald-700 bg-emerald-50 font-semibold"
-                        : "text-gray-700 hover:bg-gray-50"
-                    }`}
+                    className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-300 `}
                   >
-                    {link.label}
+                    <span
+                      className={`relative inline-block ${
+                        isActive
+                          ? "text-emerald-700 after:w-full"
+                          : "text-gray-700 hover:text-emerald-700 after:w-0"
+                      } after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:bg-emerald-600 after:transition-all after:duration-300`}
+                    >
+                      {link.label}
+                    </span>
                   </Link>
                 );
               })}

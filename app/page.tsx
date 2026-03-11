@@ -441,7 +441,7 @@ export default function Home() {
                   alt={img.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity" />
                 <div className="absolute bottom-2 sm:bottom-3 left-2 sm:left-3 right-2 sm:right-3">
                   <span className="inline-block text-[9px] sm:text-[10px] bg-emerald-500/70 text-white rounded-full px-2 py-0.5 font-semibold">
                     {img.label}

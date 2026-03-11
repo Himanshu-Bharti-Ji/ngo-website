@@ -84,7 +84,7 @@ export default function Impact() {
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-600 mb-4">
               Detailed breakdown
             </p>
-            <div className="w-10 h-0.5 bg-gradient-to-r from-amber-500 to-amber-300 rounded-full mb-5" />
+            <div className="w-10 h-0.5 bg-linear-to-r from-amber-500 to-amber-300 rounded-full mb-5" />
             <h2
               className="text-3xl sm:text-4xl font-bold text-[#1a1208]"
               style={{ fontFamily: "'Playfair Display', serif" }}
