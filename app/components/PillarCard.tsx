@@ -54,7 +54,7 @@ const PillarCard: React.FC<PillarCardProps> = ({ service, icon }) => {
       {/* arrow */}
 
       <div className="absolute top-4 right-4 rounded-full px-2.5 py-1 bg-emerald-500/60 border border-emerald-400/40 flex items-center justify-center">
-        <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wide text-white">
+        <span className="text-[10px] sm:text-xs font-bold capitalize tracking-wide text-white">
           {service.key}
         </span>
       </div>
