@@ -30,6 +30,8 @@ import {
   ngoActivities,
 } from "./content/homeContent";
 import { NGO } from "./content/ngoImages";
+import PillarCard from "./components/PillarCard";
+import MajorProjectsAccordion from "./components/MajorProjectsAccordion";
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -174,62 +176,17 @@ export default function Home() {
               </h2>
             </div>
             <p className="text-gray-500 max-w-xs text-sm leading-relaxed">
-              Each program strengthens the others — education, health, and
+              Each program strengthens the others - education, health, and
               livelihoods working as one.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((service, i) => (
-              <div
+              <PillarCard
                 key={service.key}
-                className="group relative overflow-hidden rounded-2xl sm:rounded-3xl cursor-pointer"
-              >
-                <img
-                  src={service.imageUrl}
-                  alt={service.title}
-                  className="w-full h-56 sm:h-64 md:h-72 object-cover transition-transform duration-500 md:group-hover:scale-105"
-                />
-
-                {/* overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d2b1a]/95 via-[#0d2b1a]/40 to-transparent" />
-
-                {/* content */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                  <div className="flex items-center gap-3 mb-2 sm:mb-3">
-                    <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300">
-                      {serviceIcons[i]}
-                    </div>
-
-                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-emerald-300">
-                      {service.key}
-                    </span>
-                  </div>
-
-                  <h3
-                    className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2"
-                    style={{ fontFamily: "'Playfair Display', serif" }}
-                  >
-                    {service.title}
-                  </h3>
-
-                  {/* description */}
-                  <p
-                    className="text-slate-300 text-xs  
-        opacity-100 md:opacity-0 md:group-hover:opacity-100 
-        transition-opacity duration-300"
-                  >
-                    {service.description}
-                  </p>
-                </div>
-
-                {/* arrow */}
-                <div
-                  className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center 
-      opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
-                >
-                  <ArrowUpRight size={14} className="text-white" />
-                </div>
-              </div>
+                service={service}
+                icon={serviceIcons[i]}
+              />
             ))}
           </div>
           <div className="mt-8 text-center">
@@ -243,44 +200,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ACTIVITIES GRID (images provided via Cloudinary) */}
-      <section className="py-16 sm:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center mb-10 sm:mb-14">
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-600 mb-4">
-              Our activities
-            </p>
-            <h2
-              className="text-3xl sm:text-4xl font-bold text-[#1a1208] leading-tight"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              What we do <em className="text-emerald-700">on the ground</em>
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {ngoActivities.map((act) => (
-              <div
-                key={act.key}
-                className="group bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
-              >
-                <div className="relative h-48 sm:h-52 overflow-hidden">
-                  <img
-                    src={act.image}
-                    alt={act.label}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-5 sm:p-6">
-                  <h3 className="font-bold text-[#1a1208] text-base sm:text-lg leading-snug mb-4 group-hover:text-emerald-700 transition-colors">
-                    {act.label}
-                  </h3>
-                  <p className="text-slate-600 text-sm">{act.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <MajorProjectsAccordion />
 
       {/* PULL QUOTE */}
       {/* <section className="relative overflow-hidden">
@@ -406,24 +326,24 @@ export default function Home() {
       </section> */}
 
       {/* PHOTO GALLERY */}
-      <section className="py-16 sm:py-24 bg-[#0d2b1a]">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-10 sm:mb-12">
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-300/60 mb-4">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-600 mb-4">
                 From the ground
               </p>
               <div className="w-10 h-0.5 bg-gradient-to-r from-amber-500 to-amber-300 rounded-full mb-5" />
               <h2
-                className="text-3xl sm:text-4xl font-bold text-white"
+                className="text-3xl sm:text-4xl font-bold text-[#1a1208]"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                Life in our <em className="text-emerald-400">communities.</em>
+                Life in our <em className="text-emerald-700">communities.</em>
               </h2>
             </div>
             <Link
               href="/gallery"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-300 hover:text-white transition-colors self-start sm:self-auto"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 border-b-2 border-emerald-600 pb-0.5 hover:text-emerald-900 transition-colors self-start sm:self-auto"
             >
               Full gallery <ArrowRight size={15} />
             </Link>

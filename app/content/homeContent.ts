@@ -1,3 +1,4 @@
+import { BookOpen, Heart, Sprout } from "lucide-react";
 import { NGO } from "./ngoImages";
 
 // derived arrays for convenience
@@ -104,6 +105,8 @@ export const services = [
       "Bridge Course Residential Camps, learning centres and CHILDLINE services for out‑of‑school and at‑risk children, helping them return to school and stay protected from abuse, trafficking and child marriage",
     // use book distribution image from cloudinary
     imageUrl: NGO.bookDistribution,
+    footerLabel: "Education",
+    Icon: BookOpen,
   },
   {
     key: "healthcare",
@@ -112,6 +115,8 @@ export const services = [
       "Promotion of women’s and children’s health, control of female foeticide through the Kopal Project, and long‑term support to leprosy‑affected families.",
     // awareness program photo represents health outreach
     imageUrl: NGO.awarenessProgram,
+    footerLabel: "Healthcare",
+    Icon: Heart,
   },
   {
     key: "community",
@@ -120,6 +125,8 @@ export const services = [
       "Women’s Self Help Groups, Mahila Mandals and small farmers adopt sustainable, low‑cost agriculture, use crop‑wise PoPs and strengthen local governance institutions",
     // farm visit image fits community & agriculture
     imageUrl: NGO.farmVisit,
+    footerLabel: "Community",
+    Icon: Sprout,
   },
 ];
 

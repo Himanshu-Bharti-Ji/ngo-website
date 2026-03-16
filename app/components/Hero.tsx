@@ -18,7 +18,7 @@ export default function Hero() {
         loop
         autoplay={{ delay: 7000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
-        className="h-[75vh] sm:h-[80vh] md:h-[85vh]"
+        className="h-[83svh] sm:h-[86svh] md:h-[82svh]"
       >
         {heroSlides.map((slide) => (
           <SwiperSlide key={slide.id}>

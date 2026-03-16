@@ -128,6 +128,72 @@ export const whatWeDoContent = {
       ],
     },
   ],
+  janVikasProjects: [
+    {
+      key: "childline-district",
+      title: "CHILDLINE 1098",
+      tag: "Child Protection · 24x7 Helpline",
+      tagline: "District-wide emergency helpline for children in distress",
+      description:
+        "A 24-hour emergency phone service for children in need of care and protection, responding to cases of abuse, neglect, missing children and children in distress across the district.",
+    },
+    {
+      key: "railway-childline",
+      title: "Railway CHILDLINE – Narkatiyaganj",
+      tag: "Child Protection · Railways",
+      tagline: "Safeguarding children at the railway station",
+      description:
+        "An initiative to ensure care, protection and well-being of run-away, unaccompanied and trafficked children who come in contact with the railways at Narkatiyaganj.",
+    },
+    {
+      key: "kopal-project",
+      title: "Kopal Project",
+      tag: "Gender Justice · PNDT Act",
+      tagline: "Community-led control of female foeticide",
+      description:
+        "Focused on control of female foeticide under the PNDT Act through community monitoring, awareness and work with service providers and families.",
+    },
+    {
+      key: "nabard-shg",
+      title: "NABARD-Supported SHG Project",
+      tag: "SHGs · Skills & Empowerment",
+      tagline: "Financial inclusion through women's Self Help Groups",
+      description:
+        "Formation and strengthening of women's Self Help Groups, their empowerment and skill-development training to build sustainable livelihoods and financial inclusion.",
+    },
+    {
+      key: "dalit-girls-education",
+      title: "Elementary Education of Dalit & Minority Girls",
+      tag: "Education · Bridge Course & Learning Centres",
+      tagline: "Breaking cycles of exclusion through girls' education",
+      description:
+        "Bridge Course Residential Camps and learning centres ensuring elementary education for Dalit and minority girls, breaking cycles of child marriage, child labour and long-term exclusion.",
+    },
+    {
+      key: "agriculture-livelihoods",
+      title: "Revival of Agriculture-Based Livelihoods",
+      tag: "Agriculture · Nepal-Bordering Districts",
+      tagline: "Sustainable farming in Eastern UP & Northern Bihar",
+      description:
+        "Working in Nepal-bordering districts of Eastern Uttar Pradesh and Northern Bihar to decrease cost of production through scientific, area-specific PoPs and sustainable agriculture practices.",
+    },
+    {
+      key: "women-children-health",
+      title: "Promotion of Health & Education – Women & Children",
+      tag: "Health · Education · Gender",
+      tagline: "Connecting families to education and health services",
+      description:
+        "Interventions that ensure women and children access education, health services and awareness — because when women are healthy and informed, families and futures are stronger.",
+    },
+    {
+      key: "leprosy-families",
+      title: "Support for Leprosy-Affected Families",
+      tag: "Inclusion · Rehabilitation",
+      tagline: "Long-term dignity and support for marginalised families",
+      description:
+        "Long-term educational, social welfare and psycho-social support for families affected by leprosy, who face profound, multi-faceted challenges and systemic marginalisation.",
+    },
+  ],
 };
 
 export const impactContent = {
