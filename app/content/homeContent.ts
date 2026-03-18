@@ -228,7 +228,7 @@ export const homeGalleryImages = [
     src: NGO.sewingTraining,
     alt: "Women learning tailoring in vocational training",
     label: "Tailoring training class",
-    span: "",
+    span: "row-span-2",
   },
   {
     src: NGO.sewingCertificates,
@@ -240,7 +240,7 @@ export const homeGalleryImages = [
     src: NGO.childlineCommunityMeet,
     alt: "Community meeting organized under Childline initiative",
     label: "Childline village meet",
-    span: "",
+    span: "col-span-2",
   },
   {
     src: NGO.schoolSportsActivity,
