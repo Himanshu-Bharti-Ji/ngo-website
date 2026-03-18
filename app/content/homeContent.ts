@@ -276,7 +276,7 @@ export const homeGalleryImages = [
     src: NGO.govtOfficeMeeting,
     alt: "Government office coordination meeting for child welfare",
     label: "Govt coordination meet",
-    span: "col-span-2 row-span-2",
+    span: "col-span-2 row-span-3",
   },
   {
     src: NGO.dcpcReviewMeeting,
